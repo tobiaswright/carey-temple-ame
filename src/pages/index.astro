@@ -5,9 +5,12 @@ import giveImg from '../assets/carey-temple-give.png';
 
 <Layout>
 	
-		<h3>Welcome to Carey Temple<br />African Methodist Episcopal Church</h3>
+		<p class="welcome">Welcome to</p>
+		<h2 class="title">Carey Temple African Methodist Episcopal Church</h2>
+
 		<p>At Carey Temple A.M.E. Church, we rejoice in the abundant blessings bestowed upon us by God. Our historic congregation has been guided by generations of remarkable leaders, providing a foundation of spiritual, cultural, and educational strength for nearly a century.</p>
 		
+		<p><a class="underline" href="https://www.tobiaswright.com/carey-temple-ame/history/">Read more about out history</a></p>
 
 		<img src={giveImg.src} alt="Ways to give" class="pb-2"/>
 
@@ -28,3 +31,18 @@ import giveImg from '../assets/carey-temple-give.png';
 		<p>Experience the joy and love of Christ at Carey Temple African Methodist Episcopal Church. We are here for such a time as this, and we eagerly await your presence in our worship and mission.</p> -->
 
 	</Layout>
+
+	<style>
+		p.welcome {
+			text-align: center;
+			margin: 0;
+			padding:  0;
+		}
+
+		h2.title {
+			font-size: 25px;
+			font-weight: bold;
+			margin: 0 0 15px 0;
+			padding: 0;
+		}
+	</style>
