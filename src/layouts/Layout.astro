@@ -1,3 +1,11 @@
+---
+import Address from './Address.astro'
+import Header from './Header.astro'
+import './src/styles/global.css'
+import bkGroundImg from '../assets/carey-temple-bkg.png';
+---
+<!-- C:\Users\tobia\dev\carey-tempple\src\assets\carey-temple-logo.png
+src\assets\care-temple-inside.jpg -->
 <!doctype html>
 <html lang="en">
 	<head>
@@ -5,10 +13,31 @@
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>Carey Temple AME Church</title>
+
 	</head>
-	<body>
-		<slot />
+	<body class="bg-no-repeat bg-top bg-rose-900" style=`background-image: url(${bkGroundImg.src})`>
+		<div class="max-w-3xl mx-auto">
+			<Header />
+
+			<div class="flex flex-col items-center my-10">
+				<h2 class="text-white text-6xl font-black text-center shadow-2xl">Join us this Sunday</h2>
+				<button class="rounded-full bg-blue-500 p-2 w-40 my-5 font-bold text-white">You're Invited</button>
+			</div>
+
+
+			<div id="content" class="bg-white">
+				<slot />
+			</div>
+			
+
+			<footer>
+				<Address />
+			</footer>
+
+			
+		</div>
+		<div class="md:hidden fixed top-3 right-3 rounded-full bg-blue-500 p-2 w-20 my-5 text-center font-bold text-white"><a href="mobile-navigation">Menu</a></div>
 	</body>
 </html>
 
