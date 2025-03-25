@@ -1,7 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import pantry from '../assets/pantryFlyer.png';
+import flyer from '../assets/food-pantry-flyer.pdf';
 ---
 
 <Layout>
-    <h2>Coming soon</h2>
+   <img src={pantry.src} alt="Food Pantry" />
+   <p class="text-center"><a href={flyer}>Click here to download PDF</a></p>
 </Layout>
