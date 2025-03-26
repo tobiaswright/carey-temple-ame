@@ -8,5 +8,5 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()]
   },
-  site: 'https://tobiaswright.github.io/carey-temple-ame'
+  site: 'https://www.careytempleame.org'
 });
