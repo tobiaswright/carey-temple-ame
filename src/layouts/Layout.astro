@@ -18,20 +18,16 @@ src\assets\care-temple-inside.jpg -->
 	</head>
 	<body class="bg-no-repeat bg-top bg-rose-900">
 		<div class="bg-no-repeat bg-center bg-top bg-red-950" style=`background-image: url(${bkGroundImg.src})`>
-
-			<div class="max-w-3xl mx-auto"> 
+			<div class="max-w-3xl mx-auto pb-5"> 
 				<Header />
-				<div class="flex flex-col items-center">
-					<h2 class="text-white text-6xl font-black text-center shadow-2xl">Join us this Sunday</h2>
-					<a class="rounded-full bg-blue-500 p-2 w-70 my-5 font-bold text-white text-center" href="../contact">Sunday Service start @ 11:00a</a>
-				</div>
 			</div>
 		</div>
 
-		<div class="max-w-3xl mx-auto"> 
+		<div class="max-w-3xl mx-auto -m-5"> 
 			<div id="content" class="bg-white">
 				<slot />
 			</div>
+			
 			<footer>
 				<Address />
 			</footer>
