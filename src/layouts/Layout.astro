@@ -1,5 +1,5 @@
 ---
-import Address from './Address.astro'
+import Footer from './Footer.astro'
 import Header from './Header.astro'
 import '../styles/global.css'
 import bkGroundImg from '../assets/carey-temple-inside.jpg';
@@ -17,21 +17,25 @@ src\assets\care-temple-inside.jpg -->
 
 	</head>
 	<body class="bg-no-repeat bg-top bg-rose-900">
-		<div class="bg-no-repeat bg-center bg-top bg-red-950" style=`background-image: url(${bkGroundImg.src})`>
+		<div class="bg-no-repeat bg-center bg-top bg-rose-950" style=`background-image: url(${bkGroundImg.src})`>
 			<div class="max-w-3xl mx-auto pb-5"> 
 				<Header />
 			</div>
 		</div>
 
-		<div class="max-w-3xl mx-auto -m-5"> 
-			<div id="content" class="bg-white">
-				<slot />
+			<div class="max-w-3xl mx-auto -mt-5"> 
+				<div id="content" class="bg-white">
+					<slot />
+				</div>
 			</div>
-			
-			<footer>
-				<Address />
-			</footer>
+
+		<div class="bg-red-950">
+			<div class="max-w-3xl mx-auto pb-5 flex-grow"> 
+				<Footer />
+			</div>
 		</div>
+		
+		
 
 		<div class="md:hidden fixed top-3 right-3 rounded-full bg-blue-500 p-2 w-20 my-5 text-center font-bold text-white"><a href="../mobile-navigation">Menu</a></div>
 	</body>
