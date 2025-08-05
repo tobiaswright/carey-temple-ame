@@ -21,4 +21,19 @@ h3 {font-size: 30px; text-align: center; margin: 40px; font-weight: bold;}
     font-weight: 700;
     font-style: normal;
   }
+@layer base{
+  :root {
+    --color-background: #cbd5e1;
+    --color-background-alt: #8ec6ff;
+    --color-border-active: #173db6;
+    --color-border-default: #94a3b8;
+    --color-highlight: #8ec6ff;
+    --color-primary: #144be1;
+    --color-primary-active: #19388f;
+    --color-text-default: #0f172a;
+    --color-text-muted: #475569;
 
+    --font-family-body: "Open Sans", sans-serif;
+    --font-family-display: "Nunito Sans", sans-serif;
+  }
+}
